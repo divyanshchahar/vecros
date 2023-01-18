@@ -18,10 +18,23 @@
   --nav-link_m: calc(2.5 * var(--nav-link_fs));
   --nav-link_br: 5%;
 
+  --scrolling-showcase_w: 100%;
+  --scrolling-showcase_h: 95vh;
+  --scrolling-showcase_p: 10vh;
+
+  --text-1_fw: 800;
+  --text-1_fs: 2rem;
+  --text-1_p: 1.5vh;
+
+  --button-container-1_fs: 0.75rem;
+  --button-container-1_g: calc(3 * var(--button-container-1_fs));
+  --button-container-1_p: 5%;
+
   /* COLORS */
   --color1: rgba(12, 12, 12, 1);
   --color2: rgba(255, 255, 255, 1);
   --color3: rgba(0, 86, 98, 1);
+  --color4: rgba(6, 6, 6, 1);
 }
 
 .brnading-logo {
@@ -93,19 +106,91 @@
   cursor: pointer;
 }
 
+.scrolling-showcase {
+  color: var(--color2);
+  width: var(--scrolling-showcase_w);
+  height: var(--scrolling-showcase_h);
+  background-color: var(--color4);
+  background-image: url("./assets/drone_background.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: var(--scrolling-showcase_p) 0 var(--scrolling-showcase_p) 0;
+}
+
+.text-container-1 {
+  text-align: center;
+}
+
+.text-1 {
+  font-weight: var(--text-1_fw);
+  font-size: var(--text-1_fs);
+  padding-bottom: var(--text-1_p);
+}
+
+.text-2 {
+  padding-bottom: var(--text-1_p);
+}
+
+.button-container-1 {
+  display: flex;
+  justify-content: center;
+  font-size: var(--button-container-1_fs);
+  gap: var(--button-container-1_g);
+  padding: var(--button-container-1_p);
+}
+
+.text-button {
+  display: inline;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+.text-button-fill {
+  color: black;
+  background-color: white;
+  display: inline;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+.text-button-fill {
+  display: inline;
+}
+
 @media screen and (min-width: 1200px) {
   :root {
-    --branding-logo_h: 34px;
+    --branding-logo_h: 30px;
+
+    --hamburger-menu_h: 30px;
+
+    --top-nav-bar_p1: var(--top-nav-bar_p1) var(--top-nav-bar_p2);
+    --top-nav-bar_p2: 24px;
 
     --nav-link_fs: 0.875rem;
     --nav-link_p: calc(0.5 * var(--nav-link_fs));
     --nav-link_m: calc(2.5 * var(--nav-link_fs));
     --nav-link_br: 5%;
 
+    --scrolling-showcase_w: 100%;
+    --scrolling-showcase_h: 95vh;
+    --scrolling-showcase_p: 10vh;
+
+    --text-1_fw: 800;
+    --text-1_fs: 3.5rem;
+    --text-1_p: 1.5vh;
+
+    --button-container-1_fs: 0.75rem;
+    --button-container-1_g: calc(3 * var(--button-container-1_fs));
+    --button-container-1_p: 2.5%;
+
     /* COLORS */
     --color1: rgba(12, 12, 12, 1);
     --color2: rgba(255, 255, 255, 1);
     --color3: rgba(0, 86, 98, 1);
+    --color4: rgba(6, 6, 6, 1);
   }
 
   .top-nav-bar {
@@ -144,5 +229,11 @@
 
   .nav-link-highlight:hover {
     cursor: pointer;
+  }
+
+  .scrolling-showcase-memeber-1 {
+    position: relative;
+    top: 50%;
+    right: 35%;
   }
 }
